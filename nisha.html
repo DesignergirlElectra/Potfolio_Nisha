@@ -7,18 +7,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Archivo:wght@300;400;600;900&display=swap"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet">
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fjalla+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
         <link rel="stylesheet" href="nisha.css">
-        <!--
 
-Tooplate 2154 Split Portfolio
-
-https://www.tooplate.com/view/2154-split-portfolio
-
-Free HTML CSS Template
-
--->
     </head>
     <body>
 
@@ -27,18 +26,14 @@ Free HTML CSS Template
                 <div class="container">
                     <div class="header_wrap">
                         <a href="#work" class="logo">
-                            <!-- <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#ff3366" stroke-width="3"/>
-                <path d="M 30 40 L 50 60 L 70 40" fill="none" stroke="#ff3366" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="50" cy="70" r="3" fill="#ff3366"/>
-            </svg> -->
                             N
                             <span>I</span>
                         </a>
                         <nav>
                             <ul class="desktop-nav">
-                                <li><a href="#work">Work</a></li>
+
                                 <li><a href="#about">About</a></li>
+                                <li><a href="/project.html">Project</a></li>
                                 <li><a href="#services">Services</a></li>
                                 <li><a
                                         href="#testimonials">Testimonials</a></li>
@@ -56,8 +51,8 @@ Free HTML CSS Template
                 <button class="mobile-nav-close"
                     aria-label="Close menu">&times;</button>
                 <ul>
-                    <li><a href="#work">Work</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="/project.html">Project</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -75,7 +70,8 @@ Free HTML CSS Template
 
         <!-- banner section  -->
 
-        <div class="banner-section">
+        <div class="banner-section" id="about"
+            style="background: rgba(255, 255, 255, 0.02);">
             <div class="container">
                 <div class="cont-row">
                     <div class="cont-col-left">
@@ -84,11 +80,61 @@ Free HTML CSS Template
                                 <span>I’m Nisha</span>
                                 <h1>I’m Nisha, a UI & Frontend Developer
                                     creating seamless, responsive web
-                                    interfaces.Let’s collaborate to build
+                                    interfaces. Let’s collaborate to build
                                     engaging and user-centric digital
                                     experiences.</h1>
                             </div>
                         </div>
+                        <div class="hero-btn">
+                            <div class="hire"><a href="#"><span>
+                                        <i class="fa-solid fa-handshake"></i>
+
+                                    </span>Hire
+                                    Me</a></div>
+                            <div class="hire hire_connect"><a
+                                    href="https://wa.me/918595094834"
+                                    class="whatsapp" target="_blank">
+                                    <span><i
+                                            class="fa-solid fa-phone"></i></span>Contact
+                                    Us
+                                </a></div>
+                        </div>
+                        <!-- <div class="skills-wrapper">
+                           
+                            <div class="skills-row left">
+                                <span>JavaScript</span>
+                                <span>jQuery</span>
+                                <span>React</span>
+                                <span>Next.js</span>
+                                <span>Photoshop</span>
+                                <span>Sass</span>
+                            </div>
+
+                            <div class="skills-row right">
+                                <span>SCSS</span>
+                                <span>Framer Motion</span>
+                                <span>Bootstrap</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Git</span>
+                            </div>
+                        </div> -->
+
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h3>15+</h3>
+                                <p>Projects</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>10+</h3>
+                                <p>Clients</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>3</h3>
+                                <p>Years</p>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="cont-col-right">
 
@@ -99,228 +145,191 @@ Free HTML CSS Template
 
         <!-- banner section ends her  -->
 
-        <!-- About Section -->
-        <!-- <section id="about" class="about-section">
-            <div class="container">
-                <div class="about-split">
-                    <div class="about-content">
-                        <h2>Crafting Digital Experiences</h2>
-                        <p>I'm a multidisciplinary designer and creative
-                            director
-                            based in New York, specializing in brand identity,
-                            digital design, and visual storytelling. With over 8
-                            years of experience, I've helped startups and
-                            established brands create meaningful connections
-                            with
-                            their audiences.</p>
-                        <p>My approach combines strategic thinking with
-                            meticulous
-                            craft. I believe great design isn't just about
-                            aesthetics—it's about solving problems, telling
-                            stories,
-                            and creating experiences that resonate.</p>
-                        <p>This template is provided by <a
-                                href="https://www.tooplate.com"
-                                target="_blank">Tooplate</a>, a website offering
-                            free HTML CSS templates for personal and commercial
-                            use.
-                            You can download, modify, and use this template
-                            without
-                            any attribution requirement. Explore AI-ready web
-                            templates at <a href="https://templatemo.com"
-                                rel="nofollow" target="_blank">TemplateMo</a>.
-                            All
-                            photos sourced from <a href="https://unsplash.com"
-                                rel="nofollow" target="_blank">Unsplash</a>.</p>
-                        <div class="about-stats">
-                            <div class="stat-item">
-                                <h3>50+</h3>
-                                <p>Projects</p>
-                            </div>
-                            <div class="stat-item">
-                                <h3>30+</h3>
-                                <p>Clients</p>
-                            </div>
-                            <div class="stat-item">
-                                <h3>8</h3>
-                                <p>Years</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-image"></div>
-                </div>
-            </div>
-        </section> -->
-
         <!-- Services Section -->
 
-        <!-- <section id="services" class="services-section">
-            <div class="container">
-                <div class="services-container">
+        <section id="services" class="services-section">
+
+            <div class="services-container">
+                <div class="container">
                     <div class="section-header">
-                        <h2>What I Do</h2>
-                        <p>Comprehensive design services tailored to your
-                            needs</p>
+                        <h2>My Services</h2>
+                        <p>Clean UI code. Responsive design. Better user
+                            experience.</p>
                     </div>
                     <div class="services-grid">
                         <div class="service-card">
                             <div class="service-number">01</div>
-                            <h3>Brand Identity</h3>
-                            <p>Creating cohesive visual identities that capture
-                                your
-                                brand's essence and resonate with your
-                                audience.</p>
-                            <ul class="service-list">
+                            <h3>Design to Responsive Code Conversion</h3>
+                            <p>Convert Figma, Adobe XD, or PSD designs into
+                                pixel-perfect, responsive HTML/CSS layouts
+                                optimized for all screen sizes and devices.</p>
+                            <!-- <ul class="service-list">
                                 <li>Logo Design</li>
                                 <li>Brand Strategy</li>
                                 <li>Visual Guidelines</li>
                                 <li>Brand Collateral</li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <div class="service-card">
                             <div class="service-number">02</div>
-                            <h3>Web Design</h3>
-                            <p>Designing beautiful, functional websites that
-                                deliver
-                                exceptional user experiences across all
-                                devices.</p>
-                            <ul class="service-list">
-                                <li>UI/UX Design</li>
-                                <li>Responsive Design</li>
-                                <li>Prototyping</li>
-                                <li>Frontend Development</li>
-                            </ul>
+                            <h3>UI/UX Focused Interface Creation</h3>
+                            <p>Create visually engaging and user-centric
+                                interfaces that improve usability and
+                                interaction while maintaining brand consistency
+                                and design standards.</p>
                         </div>
                         <div class="service-card">
                             <div class="service-number">03</div>
-                            <h3>Digital Strategy</h3>
-                            <p>Strategic planning and consulting to help your
-                                brand
-                                succeed in the digital landscape.</p>
-                            <ul class="service-list">
-                                <li>User Research</li>
-                                <li>Content Strategy</li>
-                                <li>Digital Roadmaps</li>
-                                <li>Analytics & Insights</li>
-                            </ul>
+                            <h3>Website Performance & Speed Enhancement</h3>
+                            <p>Enhance website speed and efficiency by
+                                optimizing assets, reducing load time, and
+                                applying best practices for improved user
+                                experience and search visibility.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-number">04</div>
+                            <h3>Accessibility & Usability Improvement</h3>
+                            <p>Implement accessibility features to make websites
+                                inclusive, ensuring compliance with WCAG
+                                guidelines and improving usability for all
+                                users.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-number">05</div>
+                            <h3>Cross-Platform & Browser Support</h3>
+                            <p>Ensure seamless website functionality across all
+                                major browsers and devices by following web
+                                standards and conducting thorough compatibility
+                                testing.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-number">06</div>
+                            <h3>Website Management Services</h3>
+                            <p>Maintain and improve website UI by managing
+                                updates, resolving layout issues, and ensuring
+                                consistent design across pages</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section> -->
 
-        <!-- Testimonials Section -->
-        <!-- <section id="testimonials" class="testimonials-section">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects and case study -->
+        <section id="case_Study" class="case_Study">
             <div class="container">
-                <div class="testimonials-container">
+                <div class="case_Study-container">
                     <div class="section-header">
-                        <h2>Client Testimonials</h2>
-                        <p>What people say about working with me</p>
+                        <h2>Projects & Case Studies</h2>
+                        <p>A collection of web interfaces and frontend projects
+                            focused on usability, accessibility, and visual
+                            consistency.</p>
                     </div>
-                    <div class="testimonials-grid">
-                        <div class="testimonial-card">
-                            <div class="quote-icon">"</div>
-                            <p class="testimonial-text">Working with this
-                                designer
-                                was an absolute pleasure. The brand identity
-                                they
-                                created exceeded our expectations and perfectly
-                                captured our vision. Highly recommended!</p>
-                            <div class="testimonial-author">
-                                <div class="author-avatar">SK</div>
-                                <div class="author-info">
-                                    <h4>Sarah Kim</h4>
-                                    <p>CEO, Stellar Tech</p>
+
+                    <div class="services-grid">
+                        <div class="service-card pro_card">
+                            <div class="case-card">
+                                <a href="https://upniva.com/" target="_blank">
+                                    <img src="./images/upniva.png" alt="upniva">
+                                </a>
+                            </div>
+                            <div class="case-content">
+                                <div class="case-content-inner">
+                                    <h5>Fintech Website</h5>
+                                    <p>UI Development</p>
+                                </div>
+                                <div class="golive">
+                                    <a href="https://upniva.com/"
+                                        target="_blank">Go Live</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="testimonial-card">
-                            <div class="quote-icon">"</div>
-                            <p class="testimonial-text">The attention to detail
-                                and
-                                creative approach made all the difference. Our
-                                website redesign not only looks stunning but has
-                                significantly improved our conversion rates.</p>
-                            <div class="testimonial-author">
-                                <div class="author-avatar">MJ</div>
-                                <div class="author-info">
-                                    <h4>Michael Johnson</h4>
-                                    <p>Founder, FitLife</p>
+                        <div class="service-card pro_card">
+                            <div class="case-card">
+                                <a
+                                    href="https://designergirlelectra.github.io/Reality.SK/"
+                                    target="_blank">
+                                    <img src="./images/reality.sk.png"
+                                        alt="upniva">
+                                </a>
+                            </div>
+                            <div class="case-content">
+                                <div class="case-content-inner">
+                                    <h5>Tourism Website</h5>
+                                    <p>UI Development</p>
+                                </div>
+                                <div class="golive">
+                                    <a
+                                        href="https://designergirlelectra.github.io/Reality.SK/"
+                                        target="_blank">Go Live</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="testimonial-card">
-                            <div class="quote-icon">"</div>
-                            <p class="testimonial-text">Professional, creative,
-                                and
-                                always on time. The entire process was smooth
-                                and
-                                collaborative. We couldn't be happier with the
-                                final
-                                results.</p>
-                            <div class="testimonial-author">
-                                <div class="author-avatar">EC</div>
-                                <div class="author-info">
-                                    <h4>Emily Chen</h4>
-                                    <p>Marketing Director, Fashion Co.</p>
+                        <div class="service-card pro_card">
+                            <div class="case-card">
+                                <a href="https://hunarmandindia.com/"
+                                    target="_blank">
+                                    <img src="./images/hunarmand.png"
+                                        alt="upniva">
+                                </a>
+                            </div>
+                            <div class="case-content">
+                                <div class="case-content-inner">
+                                    <h5>Job Portal</h5>
+                                    <p>UI Development</p>
+                                </div>
+                                <div class="golive">
+                                    <a href="https://hunarmandindia.com/"
+                                        target="_blank">Go Live</a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="seeked_more_pro">
+                        <div class="hire"><a
+                                href="/project.html" target="_blank">
+                                See More<span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a></div>
+                            
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- Contact Section -->
-        <!-- <section id="contact" class="contact-section">
+        <section id="contact" class="contact-section">
             <div class="container">
                 <div class="contact-split">
                     <div class="contact-info">
-                        <h2>Let's Work Together</h2>
-                        <p>Have a project in mind? I'd love to hear about it.
-                            Send
-                            me a message and let's create something amazing
-                            together.</p>
+                        <h2>Let’s Collaborate</h2>
+                        <p>If you’re planning a project or need a UI expert, I’d love to connect. Let’s work together to create meaningful and engaging solutions.</p>
                         <div class="contact-details">
                             <div class="contact-item">
-                                <div class="contact-item-icon">📧</div>
+                                <div class="contact-item-icon"><i class="fa-solid fa-envelope email_icon"></i>
+</div>
                                 <div class="contact-item-content">
-                                    <h4>Email</h4>
-                                    <a
-                                        href="/cdn-cgi/l/email-protection#6008050c0c0f200518010d100c054e030f0d"><span
-                                            class="__cf_email__"
-                                            data-cfemail="18707d747477587d60797568747d367b7775">[email&#160;protected]</span></a>
+                                    <h5>Email</h5>
+                                   <a href="mailto:ns8143385@gmail.com">ns8143385@gmail.com</a>
                                 </div>
                             </div>
                             <div class="contact-item">
                                 <div class="contact-item-icon">📱</div>
                                 <div class="contact-item-content">
-                                    <h4>Phone</h4>
-                                    <a href="tel:+1234567890">+1 (234)
-                                        567-890</a>
+                                    <h5>Phone</h5>
+                                    <a href="tel:+918595094834">+91-8595094834</a>
                                 </div>
                             </div>
                             <div class="contact-item">
                                 <div class="contact-item-icon">📍</div>
                                 <div class="contact-item-content">
-                                    <h4>Location</h4>
+                                    <h5>Location</h5>
                                     <a
-                                        href="https://www.google.com/maps/place/New+York,+NY"
-                                        target="_blank">New York, NY</a>
+                                        href="#"
+                                        target="_blank">New Delhi</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" class="social-link"
-                                title="Dribbble">Dr</a>
-                            <a href="#" class="social-link"
-                                title="Behance">Be</a>
-                            <a href="#" class="social-link"
-                                title="Instagram">In</a>
-                            <a href="#" class="social-link"
-                                title="LinkedIn">Li</a>
-                            <a href="#" class="social-link"
-                                title="Twitter">Tw</a>
                         </div>
                     </div>
                     <form class="contact-form">
@@ -348,16 +357,16 @@ Free HTML CSS Template
                     </form>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <footer>
+        <footer>
             <div class="container">
-                <p>Copyright © 2026 Your Company Name. All rights reserved.
-                    Design:
-                    <a rel="nofollow" href="https://www.tooplate.com"
-                        target="_blank">Tooplate</a></p>
+                <p>Copyright © 2025 Nisha. All rights reserved.
+            </p>
             </div>
-        </footer> -->
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
         <!-- <script data-cfasync="false"
             src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
