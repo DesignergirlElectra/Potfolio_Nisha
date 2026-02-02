@@ -31,6 +31,7 @@ body {
   max-width: 1200px;
   margin: auto;
 } */
+
 /* Header */
 
 .header_wrap {
@@ -42,6 +43,7 @@ body {
 .header_wrap span {
   color: var(--accent);
 }
+
 header {
   position: fixed;
   top: 0;
@@ -63,7 +65,7 @@ header {
   letter-spacing: -1px;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   text-decoration: none;
   color: var(--text-primary);
   transition: opacity 0.3s ease;
@@ -268,7 +270,7 @@ header {
   position: relative;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 60px;
+  gap: 20px;
   align-items: center;
   margin-top: 4rem;
 }
@@ -331,7 +333,7 @@ header {
 }
 
 .skills-wrapper {
-  padding: 30px 0;
+  padding: 0 0 30px 0;
   overflow: hidden;
 }
 
@@ -343,12 +345,14 @@ header {
 }
 
 .skills-row span {
-  background: #1c1c1c;
-  color: #fff;
+  /* color: #fff; */
   padding: 8px 16px;
-  border-radius: 999px;
+  border-radius: 30px;
   font-size: 14px;
   white-space: nowrap;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
 }
 
 /* Left moving animation */
@@ -360,7 +364,17 @@ header {
 .skills-row.right {
   animation: moveRight 20s linear infinite;
 }
-
+.img-skillwrap{
+  width:100%;
+}
+.img-skillwrap img{
+  width:100%;
+}
+.img-skillwrap img:hover{
+  scale: 1.1;
+  cursor: pointer;
+  transition: 2s;
+}
 @keyframes moveLeft {
   from {
     transform: translateX(0);
@@ -388,8 +402,9 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 0rem;
-  padding-top: 3rem;
+  padding-top: 4rem;
   /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+  max-width: 600px;
 }
 
 .stat-item {
@@ -405,6 +420,7 @@ header {
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-3px);
+  cursor: pointer;
 }
 
 .stat-item::before {
@@ -430,7 +446,7 @@ header {
 }
 
 .stat-item h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
@@ -498,6 +514,7 @@ header {
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .service-number {
@@ -631,8 +648,16 @@ header {
   margin: 0 auto;
   /* align-items: center; */
 }
-
-.contact-info p {
+.expertise-content h4 {
+    font-family: "Fjalla One", sans-serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--accent);
+    max-width: fit-content;
+    margin-bottom: 20px;
+}
+.contact-info p , .expertise-content p{
   font-size: 1.2rem;
   line-height: 1.8;
   color: var(--text-secondary);
@@ -663,7 +688,7 @@ header {
   justify-content: center;
   font-size: 1.2rem;
 }
-.contact-item-content h5{
+.contact-item-content h5 {
   margin-bottom: 5px;
 }
 .contact-item-content h4 {
@@ -764,7 +789,7 @@ footer {
   background: rgba(36, 36, 36, 0.95);
   backdrop-filter: blur(10px);
 }
-footer p{
+footer p {
   margin-bottom: 0;
 }
 /* Responsive */
@@ -884,6 +909,13 @@ footer p{
   }
 }
 
+@media (max-width: 991px) {
+
+.ns-skills-bar .ns-bar .ns-progress-line{
+  width: auto;
+}
+}
+
 @media (max-width: 768px) {
   header {
     padding: 1.5rem 5%;
@@ -954,6 +986,20 @@ footer p{
   .contact-section {
     padding: 60px 5%;
   }
+  .cont-row{
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .img-skillwrap {
+    padding: 20px 0;
+}
+  .expertise-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .ns-skills{
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1018,4 +1064,136 @@ footer p{
   .social-links {
     flex-wrap: wrap;
   }
+}
+
+
+/* ............................... */
+
+
+.ns-skills-bar {
+  padding: 15px;
+}
+
+.ns-skills-bar .ns-bar {
+  margin: 25px 0;
+}
+.ns-skills{
+  width:90%
+}
+.ns-skills-bar .ns-bar .ns-info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.ns-skills-bar .ns-bar .ns-info {
+  margin-bottom: 8px;
+  color:var(--text-primary);
+}
+
+.ns-skills-bar .ns-bar .ns-progress-line {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.ns-bar .ns-progress-line span {
+  position: absolute;
+  background:var(--accent);
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-transform : uppercase;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.ns-progress-line .ns-html {
+  width: 80%;
+}
+.ns-progress-line .ns-css {
+  width: 70%;
+}
+.ns-progress-line .ns-bootstrap {
+  width: 82%;
+}
+.ns-progress-line .ns-javascript {
+  width: 62%;
+}
+.ns-progress-line .ns-c {
+  width: 90%;
+}
+
+.ns-bar .ns-progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: var(--accent);
+}
+
+.ns-bar .ns-progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background:var(--accent);
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.ns-progress-line .ns-html::after {
+  content: "80%";
+}
+.ns-progress-line .ns-css::after {
+  content: "70%";
+}
+.ns-progress-line .ns-bootstrap::after {
+  content: "82%";
+}
+.ns-progress-line .ns-javascript::after {
+  content: "62%";
+}
+.ns-progress-line .ns-c::after {
+  content: "90%";
+}
+
+/* ////........Media Query........//// */
+@media (max-width: 769px) {
+.ns-skills{
+  width:100%
+}
+.hero-wrapper {
+    margin-top: 55px;
+}
+}
+
+@media (max-width: 700px) {
+
+    .ns-skills-bar .ns-bar .ns-progress-line{
+        width: 100%;
+    }
+}      
+
+.service-card:hover h3{
+  color: var(--accent);
 }
